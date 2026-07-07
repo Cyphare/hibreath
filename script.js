@@ -245,8 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (siteHeader) {
         siteHeader.innerHTML = `
             <div class="header-titles">
-                <h1><a href="index.html">Breathe Laboratory</a></h1>
-                <p>Department of Electrical Engineering and Information Engineering UGM</p>
+                <h1><a href="index.html">Breathe Research Group</a></h1>
+                <p><span style="white-space: nowrap;">Faculty of Engineering</span> <span style="white-space: nowrap;">Universitas Gadjah Mada</span></p>
             </div>
             <nav>
                 <ul>
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (siteFooter) {
         siteFooter.innerHTML = `
             <div class="footer-top">
-                <h2>Breathe Laboratory</h2>
+                <h2>Breathe Research Group</h2>
             </div>
             <div class="footer-content">
                 <div class="footer-links">
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Breathe Laboratory, DTETI FT UGM. All rights reserved.</p>
+                <p>&copy; 2026 Breathe Research Group, DTETI FT UGM. All rights reserved.</p>
             </div>
         `;
     }
@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (pubListContainer && originalPubCards.length > 0) {
                 originalPubCards.forEach(card => pubListContainer.appendChild(card));
             }
-            
+
             const typeButtons = document.querySelectorAll('#sortType .sort-option');
             if (typeButtons.length > 0) {
                 typeButtons.forEach(btn => btn.classList.remove('active'));
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 orderButtons.forEach(btn => btn.classList.remove('active'));
                 orderButtons[1].classList.add('active');
             }
-            
+
             closeSortDropdown();
         });
     }
